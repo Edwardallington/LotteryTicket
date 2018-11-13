@@ -30,5 +30,5 @@ def createLotteryTicket(ticketNumbers):
     # digit4 = random.randint(0, 9)
     # digit5 = random.randint(0, 9)
     # digit6 = random.randint(0, 9)
-    print(f"Your lottery ticket number is {ticket}"")
+    print(f"Your lottery ticket number is {ticket}")
 main()

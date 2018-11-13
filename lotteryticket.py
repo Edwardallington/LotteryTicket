@@ -11,15 +11,19 @@ def main():
     displayLotteryTicket()
 
 def randomNumber():
-    digit1 = random.randint(0, 9)
+    digits = []
+    #digit1 = random.randint(0, 9)
     # print(digit1)
-    digit2 = random.randint(0, 9)
-    digit3 = random.randint(0, 9)
-    digit4 = random.randint(0, 9)
-    digit5 = random.randint(0, 9)
-    digit6 = random.randint(0, 9)
-    digits = [digit1, digit2, digit3, digit4, digit5, digit6]
+    # digit2 = random.randint(0, 9)
+    # digit3 = random.randint(0, 9)
+    # digit4 = random.randint(0, 9)
+    # digit5 = random.randint(0, 9)
+    # digit6 = random.randint(0, 9)
+    # digits = [digit1, digit2, digit3, digit4, digit5, digit6]
     # print(f"{digits}")
+    for i in range(6):
+        digit2 = random.randint(0, 9)
+        digits.append(digit2)
     return digits
     
 def createLotteryTicket():

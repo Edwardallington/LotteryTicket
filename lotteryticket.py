@@ -5,9 +5,10 @@ Program: Lottery Ticket
 '''
 import random
 def main():
-    randomNumber()
+    #randomNumber()
     
-    createLotteryTicket(2)
+    #createLotteryTicket()
+    displayLotteryTicket()
 
 def randomNumber():
     digit1 = random.randint(0, 9)
@@ -19,10 +20,10 @@ def randomNumber():
     digit6 = random.randint(0, 9)
     digits = [digit1, digit2, digit3, digit4, digit5, digit6]
     # print(f"{digits}")
-    createLotteryTicket(digits)
+    return digits
     
-def createLotteryTicket(ticketNumbers):
-    ticket = ticketNumbers
+def createLotteryTicket():
+    ticket = randomNumber()
     # digit1 = random.randint(0, 9)
     # # print(digit1)
     # digit2 = random.randint(0, 9)
@@ -30,5 +31,10 @@ def createLotteryTicket(ticketNumbers):
     # digit4 = random.randint(0, 9)
     # digit5 = random.randint(0, 9)
     # digit6 = random.randint(0, 9)
-    print(f"Your lottery ticket number is {ticket}")
+    #print(f"Your lottery ticket number is {ticket}")
+    return ticket
+def displayLotteryTicket():
+    digits = createLotteryTicket()
+    for i in range(len(digits)):
+        print(digits[i])
 main()

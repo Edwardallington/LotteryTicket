@@ -39,6 +39,7 @@ def createLotteryTicket():
     return ticket
 def displayLotteryTicket():
     digits = createLotteryTicket()
-    for i in range(len(digits)):
-        print(digits[i])
+    # for i in range(len(digits)):
+    #     print(f"{digits[0]}{digits[1]}{digits[2]}{digits[3]}{digits[4]}{digits[5]}")
+    print(f"Your lottery ticket number is: {digits[0]}{digits[1]}{digits[2]}{digits[3]}{digits[4]}{digits[5]}")
 main()

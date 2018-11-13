@@ -5,10 +5,11 @@ Program: Lottery Ticket
 '''
 import random
 def main():
-    createlotteryticket()
+    randomNumber()
+    
+    createLotteryTicket()
 
-def createlotteryticket():
-    ticket = []
+def randomNumber():
     digit1 = random.randint(0, 9)
     # print(digit1)
     digit2 = random.randint(0, 9)
@@ -16,5 +17,16 @@ def createlotteryticket():
     digit4 = random.randint(0, 9)
     digit5 = random.randint(0, 9)
     digit6 = random.randint(0, 9)
+    return randomNumber
+    
+def createLotteryTicket((randomNumber, digits):
+    ticket = [digits]
+    # digit1 = random.randint(0, 9)
+    # # print(digit1)
+    # digit2 = random.randint(0, 9)
+    # digit3 = random.randint(0, 9)
+    # digit4 = random.randint(0, 9)
+    # digit5 = random.randint(0, 9)
+    # digit6 = random.randint(0, 9)
     print(ticket)
 main()
